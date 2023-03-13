@@ -9,6 +9,7 @@ total_bill = bill + total_tip_amount
 
 result = total_bill / split
 
-format(result, '.2f')
+round(result, 2)
+final = "{:.2f}".format(result)
 
-print(f"Each person should pay:  {result}")
+print(f"Each person should pay:  {final}")
