@@ -6,7 +6,7 @@ name2 = input("What is their name? \n")
 
 #Write your code below this line 👇
 combined_string = name1 + name2
-lower_case_string = combined_string.lower
+lower_case_string = combined_string.lower()
 
 t = lower_case_string.count("t")
 r = lower_case_string.count("r")
