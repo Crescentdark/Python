@@ -66,6 +66,8 @@ if door == "backdoor":
         action2 = input("You enter a library of sorts,one of these books could be a hidden room which do you choose,'Gold','White','Black'?").lower()
         if action2 == "Black":
             print("You found the artifact,now lets leg it.VICTORY")
+        elif action2 == "White":
+            print("A summoning spell has been trigered,THE SKELETON BAND GOES DOODOOOD.GAME OVER")
         else:
             print("Unlucky a disentigration spell was cast.GAME OVER")
 
