@@ -59,7 +59,6 @@ print("WANDERER! Screams a mad lookin fellar 'Bael Ur Moras Keep WILL EAT YOU AL
 print("Your bounty is to find the ancient artifact in this wretched place, for the noble has paid.")
 
 door = input("Do you enter trough the 'backdoor' or the 'front gate'?").lower()
-action2 = input("You enter a library of sorts,one of these books could be a hidden room which do you choose,'Gold','White','Black'?").lower()
 
 if door == "backdoor":
     action1 = input("You entered trough the backdoor,where do you go next up the 'stairs' or trough the 'storage'?").lower()
