@@ -10,6 +10,13 @@ def format_data(account):
     return f"{account_name}, a {account_desc}, from {account_country}"
 
 
+def check_answer(guess, a_followers, b_followers):
+    if a_followers > b_followers:
+        return guess == "a"
+    
+    else:
+        return guess == "b"
+
 #disply art
 print(logo)
 #Random account generation
@@ -24,11 +31,13 @@ print(vs)
 print(f"Compare B: {format_data(account_b)}")
 
 #ask user for a guess
-input("Who has more followers? Type 'A' or 'B': ")
+guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 
 
 #check if user correct
 ## Get follower count of each account
+a_follower_count = account_a["follower_count"]
+b_follower_count = account_b["follower_count"]
 ## Use IF statement to check if user is correct
 
 #Give user feedback on their guess.
