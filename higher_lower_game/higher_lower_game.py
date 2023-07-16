@@ -55,7 +55,7 @@ while game_should_continue:
     #Give user feedback on their guess.
     if is_correct:
         score += 1
-        print(f"You are right! Currect score: {scorfe}")
+        print(f"You are right! Currect score: {score}")
     else:
         game_should_continue = False
         print(f"Sorry, that's wrong.Final score: {score}")
