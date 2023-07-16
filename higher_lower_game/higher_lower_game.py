@@ -19,6 +19,7 @@ def check_answer(guess, a_followers, b_followers):
 
 #disply art
 print(logo)
+score = 0
 #Random account generation
 account_a = random.choice(data)
 account_b = random.choice(data)
@@ -45,9 +46,10 @@ is_correct = check_answer(guess, a_follower_count, b_follower_count)
 
 #Give user feedback on their guess.
 if is_correct:
-    print("You are right")
+    score += 1
+    print(f"You are right! Currect score: {scorfe}")
 else:
-    print("Sorry, that's wrong.")
+    print(f"Sorry, that's wrong.Final score: {score}")
 
 
 #Score storage
