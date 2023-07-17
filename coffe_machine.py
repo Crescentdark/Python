@@ -29,3 +29,19 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
+
+
+
+is_on = True
+
+while is_on:
+    choice = input("What would you like? (espresso/latte/cappuccino):")
+    if choice == "off":
+        is_on = False
+    elif choice == "report":
+        print(f"Water: {resources['water']}ml")
+        print(f"MIlk: {resources['milk']}ml")
+        print(f"COffee: {resources['coffee']}ml")
+        print(f"MOney: ${profit}")
+    else:
+        drink = MENU[choice]
