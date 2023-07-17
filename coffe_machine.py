@@ -58,6 +58,13 @@ def is_transaction_successful(money_received, drink_cost):
         print("Sorry that's not enough money. Money refunded.")
         return False
 
+
+def make_coffee(drink_name, order_ingredients):
+    for item in order_ingredients:
+        resources[item] -= order_ingredients[item]
+    print(f"HERe is your {drink_name} ☕")    
+
+
 is_on = True
 
 
@@ -74,4 +81,5 @@ while is_on:
         drink = MENU[choice]
         if is_resource_sufficient(drink["ingedients"]):
             payment = process_coins( )
-            is_transaction_successful(payment,drink["cost"])
+            if is_transaction_successful(payment,drink["cost"]):
+                make_coffee()
