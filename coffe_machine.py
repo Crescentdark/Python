@@ -23,7 +23,7 @@ MENU = {
         "cost": 3.0,
     }
 }
-
+profit = 0
 resources = {
     "water": 300,
     "milk": 200,
@@ -45,6 +45,15 @@ def process_coins():
     total += int(input("how many nickles?:")) * 0.05
     total += int(input("how many pennies?:")) * 0.01
     return total
+
+def is_transaction_successful(money_received, drink_cost):
+    """Returns true when the payment is acceptted, or false if money is not enough"""
+    if money_received >= drink_cost:
+
+        return True
+    else:
+        print("Sorry that's not enough money. Money refunded.")
+        return False
 
 is_on = True
 
