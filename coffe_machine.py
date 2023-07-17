@@ -37,6 +37,14 @@ def is_resource_sufficient(order_ingredients):
             return False
     return True
 
+def process_coins():
+    """Returns the total calculkated from coins inserted"""
+    print("PLease insert coins.")
+    total = int(input("how many quarters?:")) * 0.25
+    total += int(input("how many dimes?:")) * 0.1
+    total += int(input("how many nickles?:")) * 0.05
+    total += int(input("how many pennies?:")) * 0.01
+    return total
 
 is_on = True
 
@@ -53,4 +61,4 @@ while is_on:
     else:
         drink = MENU[choice]
         if is_resource_sufficient(drink["ingedients"])
-            
+            payment = process_coins( )
