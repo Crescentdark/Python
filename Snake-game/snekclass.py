@@ -19,12 +19,11 @@ class Snake:
         for positions in STARTING_POSITIONS:
            self.add_segment(positions)
 
-    def add_segment(self):
-        for positions in STARTING_POSITIONS:
+    def add_segment(self,position):
             new_seg = Turtle("square")
             new_seg.color("white")
             new_seg.penup()
-            new_seg.goto(positions)
+            new_seg.goto(position)
             self.segments.append(new_seg)
     
 
