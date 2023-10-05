@@ -30,4 +30,7 @@ while game_is_on:
     screen.update()
     ball.move()
 
+    #collision detection
+    if ball.ycor() > 300 or ball.ycor() < -300:
+
 screen.exitonclick()
