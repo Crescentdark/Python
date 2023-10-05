@@ -7,6 +7,7 @@ screen.title("Pong")
 screen.tracer(0)
 
 r_paddle = paddle((350,0))
+l_paddle = paddle((-350,0))
 
 screen.listen()
 screen.onkey(go_up, "up")
