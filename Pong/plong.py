@@ -40,6 +40,8 @@ while game_is_on:
     #Detect paddle missing
     if ball.xcor() > 300:
         ball.reset_postion()
+    if ball.xcor() < -300:
+        ball.reset_postion()
 
 
 
