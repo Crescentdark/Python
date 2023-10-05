@@ -42,9 +42,11 @@ while game_is_on:
     #Detect paddle missing
     if ball.xcor() > 300:
         ball.reset_postion()
+        scoreboard.l_point()
+
     if ball.xcor() < -300:
         ball.reset_postion()
-
+        scoreboard.r_point()
 
 
 screen.exitonclick()
