@@ -13,6 +13,7 @@ screen.tracer(0)
 r_paddle = Paddle((350,0))
 l_paddle = Paddle((-350,0))
 ball = Ball()
+scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
