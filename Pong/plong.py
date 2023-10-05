@@ -11,8 +11,14 @@ r_paddle = Paddle((350,0))
 l_paddle = Paddle((-350,0))
 
 screen.listen()
-screen.onkey(go_up, "up")
-screen.onkey(go_down, "down")
+screen.onkey(r_paddle.go_up, "up")
+screen.onkey(r_paddle.go_down, "down")
+
+#$left paddle
+screen.listen()
+screen.onkey(r_paddle.go_up, "w")
+screen.onkey(r_paddle.go_down, "s")
+
 
 
 game_is_on = True
