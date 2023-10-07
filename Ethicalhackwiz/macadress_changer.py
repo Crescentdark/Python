@@ -25,3 +25,5 @@ def change_mac(interface, new_mac):
 options = get_arguments()
 change_mac(options.interface, options.new_mac)
 
+ifcresult = subprocess.check_output(["ifconfig", options.interface])
+print(ifcresult)
