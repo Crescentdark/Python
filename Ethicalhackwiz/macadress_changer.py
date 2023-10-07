@@ -1,6 +1,9 @@
 import subprocess
 import optparse
 
+parser = optparse.OptionParser()
+
+
 interface = input("interface >")
 new_mac = input("new MAC >")
 
