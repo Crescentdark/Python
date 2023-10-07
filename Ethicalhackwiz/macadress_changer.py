@@ -1,4 +1,5 @@
 import subprocess
+import optparse
 
 interface = input("interface >")
 new_mac = input("new MAC >")
