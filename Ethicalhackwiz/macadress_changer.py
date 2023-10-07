@@ -35,4 +35,10 @@ def get_c_mac(interface):
 options = get_arguments()
 current_mac = get_c_mac(options.interface)
 print(f"Current MAC {current_mac}")
-#change_mac(options.interface, options.new_mac)
+change_mac(options.interface, options.new_mac)
+
+current_mac = get_c_mac(options.interface)
+if current_mac == options.new_mac:
+    print(f"[+] Mac address was successfully changed to {current_mac}")
+else:
+    print("[-] Mac address didnt get changed")
