@@ -4,6 +4,8 @@ import optparse
 parser = optparse.OptionParser()
 
 parser.add_option("-i","--interface", dest="interface", help="Interface that changes Mac adress")
+parser.add_option("-m","--mac", dest="new_mac", help="New Mac adress")
+
 
 parser.parse_args()
 
