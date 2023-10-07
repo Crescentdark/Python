@@ -9,11 +9,12 @@ parser.add_option("-m","--mac", dest="new_mac", help="New Mac adress")
 
 (options, arguments) = parser.parse_args()
 
-interface = options.interface
-new_mac = options.new_mac
+def change_mac(interface, new_mac):
+    print(f"[+] Changing Mac address for {interface} to {new_mac} ")
 
-print(f"[+] Changing Mac address for {interface} to {new_mac} ")
+    subprocess.call(f"ifconfig {interface} down")
+    subprocess.call(f"ifconfig {interface} hw ether" + new_mac,)
+    subprocess.call(f"ifconfig {interface} up")
 
-subprocess.call(f"ifconfig {interface} down")
-subprocess.call(f"ifconfig {interface} hw ether" + new_mac,)
-subprocess.call(f"ifconfig {interface} up")
+change_mac(options.interface, options.new_mac)
+
