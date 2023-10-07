@@ -26,12 +26,11 @@ def change_mac(interface, new_mac):
 options = get_arguments()
 #change_mac(options.interface, options.new_mac)
 
-ifcresult = subprocess.check_output(["ifconfig", options.interface])
-print(ifcresult)
+def get_c_mac(interface):
+    ifcresult = subprocess.check_output(["ifconfig", interface])
+    macsearchresult = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", ifcresult)
 
-macsearchresult = re.search(r"\w\w:\w\w:\w\w:\w\w:\w\w:\w\w", ifcresult)
-
-if macsearchresult:
-    print(macsearchresult.group(0))
-else:
-    print("[-] Couldnt read MAc address")
+    if macsearchresult:
+        print(macsearchresult.group(0))
+    else:
+        print("[-] Couldnt read MAc address")
