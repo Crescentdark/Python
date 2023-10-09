@@ -17,3 +17,5 @@ def scan(ip):
         clients_list.append(client_dict)
     return clients_list
 
+def print_result(results_list):
+    print()
