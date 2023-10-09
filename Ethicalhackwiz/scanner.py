@@ -18,4 +18,4 @@ def scan(ip):
     return clients_list
 
 def print_result(results_list):
-    print()
+    print("IP\t\t\tMAC Address\n-------------------------------------")
