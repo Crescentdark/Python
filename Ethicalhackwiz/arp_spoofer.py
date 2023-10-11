@@ -11,4 +11,4 @@ def get_mac(ip):
 
 
 def spoof(target_ip, spoof_ip):
-    
+    target_mac = get_mac(target_ip)
