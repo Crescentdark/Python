@@ -27,3 +27,5 @@ try:
         print(f"\r[+] Packets sent: {sent_packets_count}", end="")
         sys.stdout.flush()
         time.sleep(2)
+except KeyboardInterrupt:
+    print("[+] Detected CTRL + C ....... Quitting")
