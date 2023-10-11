@@ -22,3 +22,4 @@ while True:
     spoof("xx.xx.xx.xx", "xx.xx.xx.xx")
     sent_packets_count = sent_packets_count + 2
     print(f"\r[+] Packets sent: {sent_packets_count}", end="")
+    time.sleep(2)
