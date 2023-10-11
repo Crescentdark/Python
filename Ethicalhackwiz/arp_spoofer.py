@@ -1,6 +1,6 @@
 import scapy.all as scapy 
 import time
-import sys
+
 
 def get_mac(ip):
     arp_request = scapy.ARP(pdst=ip)
@@ -34,7 +34,6 @@ try:
         spoof("xx.xx.xx.xx", "xx.xx.xx.xx")
         sent_packets_count = sent_packets_count + 2
         print(f"\r[+] Packets sent: {sent_packets_count}", end="")
-        sys.stdout.flush()
         time.sleep(2)
 except KeyboardInterrupt:
     print("[+] Detected CTRL + C ....... Quitting")
