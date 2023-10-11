@@ -17,7 +17,8 @@ def spoof(target_ip, spoof_ip):
     scapy.send(packet, verbose = False)
 
 def restore(destination_ip, source_ip):
-    
+    destination_mac = get_mac(destination_ip)
+    source_mac = get_mac(destination_ip)
 
 
 try:
