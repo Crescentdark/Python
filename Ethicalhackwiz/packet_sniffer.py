@@ -14,6 +14,8 @@ def process_packet(packet):
 
             del scapy_packet[scapy.IP].len
             del scapy_packet[scapy.IP].chksum
+            del scapy_packet[scapy.UDP].len
+            del scapy_packet[scapy.UDP].chksum
 
     packet.accept() 
 
