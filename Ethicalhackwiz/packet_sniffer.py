@@ -12,6 +12,8 @@ def process_packet(packet):
             scapy_packet[scapy.DNS].an = answer
             scapy_packet[scapy.DNS].ancount = 1
 
+            del scapy_packet[scapy.IP].len
+
     packet.accept() 
 
 queue = netfilterqueue.NetfilterQueue()
