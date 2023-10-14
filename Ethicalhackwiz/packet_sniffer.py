@@ -13,6 +13,7 @@ def process_packet(packet):
             scapy_packet[scapy.DNS].ancount = 1
 
             del scapy_packet[scapy.IP].len
+            del scapy_packet[scapy.IP].chksum
 
     packet.accept() 
 
