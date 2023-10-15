@@ -5,3 +5,4 @@ ack_list = []
 
 def set_load(packet, load):
     packet[scapy.Raw].load = load
+    del packet[scapy.IP].len
