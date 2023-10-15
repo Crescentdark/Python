@@ -23,7 +23,7 @@ def process_packet(packet):
                 print("[+] Replacing file")
                 modified_packet = set_load(scapy_packet, "") #packet location that will get replaced
 
-                packet.set_payload(str(modified_packet))
+                packet.set_payload(bytes(modified_packet))
     packet.accept()
 
 
