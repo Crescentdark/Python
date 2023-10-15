@@ -11,4 +11,5 @@ def set_load(packet, load):
     return packet
 
 def process_packet(packet):
+    scapy_packet = scapy.IP(packet.get_payload)
     
