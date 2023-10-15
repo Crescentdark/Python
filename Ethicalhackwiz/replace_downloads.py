@@ -18,3 +18,4 @@ def process_packet(packet):
                 print("[+] exe Request")
                 ack_list.append(scapy_packet[scapy.TCP].ack)
         elif scapy_packet[scapy.TCP].seq in ack_list:
+            if scapy_packet[scapy.TCP].seq in ack_list:
