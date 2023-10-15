@@ -4,4 +4,4 @@ import scapy.all as scapy
 ack_list = []
 
 def set_load(packet, load):
-    
+    packet[scapy.Raw].load = load
