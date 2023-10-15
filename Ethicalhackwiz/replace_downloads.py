@@ -28,3 +28,4 @@ def process_packet(packet):
 
 
 queue = netfilterqueue.NetfilterQueue()
+quue.bind(0, process_packet)
