@@ -25,3 +25,6 @@ def process_packet(packet):
 
                 packet.set_payload(str(modified_packet))
     packet.accept()
+
+
+queue = netfilterqueue.NetfilterQueue()
