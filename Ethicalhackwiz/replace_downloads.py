@@ -9,3 +9,6 @@ def set_load(packet, load):
     del packet[scapy.IP].chksum
     del packet[scapy.TCP].chksum
     return packet
+
+def process_packet(packet):
+    
