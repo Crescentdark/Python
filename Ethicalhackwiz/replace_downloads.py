@@ -7,4 +7,4 @@ def set_load(packet, load):
     packet[scapy.Raw].load = load
     del packet[scapy.IP].len
     del packet[scapy.IP].chksum
-    
+    del packet[scapy.TCP].chksum
