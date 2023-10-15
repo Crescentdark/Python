@@ -16,3 +16,4 @@ def process_packet(packet):
         if scapy_packet[scapy.TCP].dport == 80:
             if ".exe" in str(scapy_packet[scapy.raw].load):
                 print("[+] exe Request")
+                ack_list.append(scapy_packet[scapy.TCP].ack)
