@@ -17,5 +17,5 @@ def process_packet(packet):
             if ".exe" in str(scapy_packet[scapy.raw].load):
                 print("[+] exe Request")
                 ack_list.append(scapy_packet[scapy.TCP].ack)
-        elif scapy_packet[scapy.TCP].seq in ack_list:
+        elif scapy_packet[scapy.TCP].sport == 80:
             if scapy_packet[scapy.TCP].seq in ack_list:
