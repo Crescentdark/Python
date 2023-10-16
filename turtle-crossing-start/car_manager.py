@@ -13,4 +13,4 @@ class CarManager:
 
     def create_cars(self):
         new_car = Turtle("Square")
-        new_car.shapesize()
+        new_car.shapesize(stretch_wid=2, stretch_len=1)
