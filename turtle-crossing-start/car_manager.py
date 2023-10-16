@@ -10,7 +10,7 @@ class CarManager:
     
 
     def __init__(self):
-        all_cars = []
+        self.all_cars = []
 
     def create_cars(self):
         new_car = Turtle("Square")
