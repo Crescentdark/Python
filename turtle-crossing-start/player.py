@@ -11,3 +11,4 @@ class Player:
         self.shape("turtle")
         self.penup()
         self.goto(STARTING_POSITION)
+        self.setheading(90)
