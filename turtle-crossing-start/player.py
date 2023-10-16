@@ -10,3 +10,4 @@ class Player:
         super().__init__()
         self.shape("turtle")
         self.penup()
+        self.goto(STARTING_POSITION)
