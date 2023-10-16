@@ -4,4 +4,8 @@ FINISH_LINE_Y = 280
 
 
 class Player:
-    pass
+    
+
+    def __init__(self):
+        super().__init__()
+        self.shape
