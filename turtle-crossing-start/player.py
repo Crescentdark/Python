@@ -8,4 +8,4 @@ class Player:
 
     def __init__(self):
         super().__init__()
-        self.shape
+        self.shape("turtle")
