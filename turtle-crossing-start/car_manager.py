@@ -16,4 +16,4 @@ class CarManager:
         new_car = Turtle("Square")
         new_car.shapesize(stretch_wid=2, stretch_len=1)
         new_car.penup()
-        new_car.color(random.choice())
+        new_car.color(random.choice(COLORS))
