@@ -18,3 +18,4 @@ class CarManager:
         new_car.penup()
         new_car.color(random.choice(COLORS))
         random_y = random.randint(-250, 250)
+        new_car.goto()
