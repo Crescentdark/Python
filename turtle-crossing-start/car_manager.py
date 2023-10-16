@@ -12,7 +12,7 @@ class CarManager:
     def __init__(self):
         self.all_cars = []
 
-    def create_cars(self):
+    def create_car(self):
         new_car = Turtle("Square")
         new_car.shapesize(stretch_wid=2, stretch_len=1)
         new_car.penup()
