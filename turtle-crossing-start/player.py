@@ -15,4 +15,4 @@ class Player:
 
 
     def go_up(self):
-        
+        self.forward(MOVE_DISTANCE)
