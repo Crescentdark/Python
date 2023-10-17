@@ -18,4 +18,4 @@ class Player:
         self.forward(MOVE_DISTANCE)
 
     def is_at_finish_line(self):
-        self.ycor() > FINISH_LINE_Y
+        if self.ycor() > FINISH_LINE_Y:
