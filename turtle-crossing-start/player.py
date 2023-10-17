@@ -18,6 +18,7 @@ class Player:
         self.forward(MOVE_DISTANCE)
 
     def go_to_start(self):
+        self.forward(MOVE_DISTANCE)
     
     
     def is_at_finish_line(self):
