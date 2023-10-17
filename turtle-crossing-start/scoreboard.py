@@ -10,4 +10,4 @@ class Scoreboard(Turtle):
         self.level = 1
         self.hideturtle()
         self.penup()
-        self.write(f"Level: ")
+        self.write(f"Level: {self.level}")
