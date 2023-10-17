@@ -31,3 +31,4 @@ while game_is_on:
             game_is_on = False
 
     #detect successful cross
+    if player.is_at_finish_line():
