@@ -20,3 +20,5 @@ class Player:
     def is_at_finish_line(self):
         if self.ycor() > FINISH_LINE_Y:
             return True
+        else:
+            return False
