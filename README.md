@@ -20,3 +20,5 @@ Projects:
   
   - Higher lower game
     - a small game where the player has to guess which one is higher
+  - A JUptyer excersiser
+    - Linear regression with jupyter
