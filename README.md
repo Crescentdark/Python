@@ -3,11 +3,14 @@ Will contain projects that wont be strictly in Python as well .
 
 Projects:
   
-  Band generator
+  - Autocliker
+    - Made for personal use for discord sounboard spamming
   
-  - Simple python generator that combines 2 user inputed strings.
+  - Blind auction
+      - small project of an auction simulator
   
-  Tip calculator
+  - Etch-a-sketch
+    - oop project of a self erasing and drawing app
   
-  - Simple python user input calculator of how much does everyone pay at an restaurant.
+  -Eth
 
