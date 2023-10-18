@@ -19,3 +19,4 @@ Projects:
     - excersises in python to familiarize myself with its concepts
   
   - Higher lower game
+    - a small game where the player has to guess which one is higher
