@@ -17,3 +17,5 @@ Projects:
 
   - Excerssises
     - excersises in python to familiarize myself with its concepts
+  
+  - Higher lower game
