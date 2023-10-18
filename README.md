@@ -22,10 +22,18 @@ Projects:
     - a small game where the player has to guess which one is higher
   - A JUptyer excersiser
     - Linear regression with jupyter
+  
   - Pong
     - classic pong game
+  
   - Quiz game
     - a quiz game where the player hsa to answer qustions
+  
   - Snake game
     - classic Snake game
-    
+  
+  - Turtle crossing game
+    - basic crossing game
+  
+  - Turtle Race
+    a small program that lets you bet on turtles that go one way
