@@ -24,3 +24,5 @@ Projects:
     - Linear regression with jupyter
   - Pong
     - classic pong game
+  - Quiz game
+    - a quiz game where the player hsa to answer qustions
