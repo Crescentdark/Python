@@ -1,5 +1,5 @@
-from art import logo
-from art import vs
+from Excerssises.art import logo
+from Excerssises.art import vs
 from game_data import data
 import random
 
