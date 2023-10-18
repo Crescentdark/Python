@@ -16,4 +16,4 @@ Projects:
     - small programs relating to networking
 
   - Excerssises
-
+    - excersises in python to familiarize myself with its concepts
