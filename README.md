@@ -26,3 +26,6 @@ Projects:
     - classic pong game
   - Quiz game
     - a quiz game where the player hsa to answer qustions
+  - Snake game
+    - classic Snake game
+    
