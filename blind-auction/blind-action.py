@@ -1,7 +1,7 @@
 from replit import clear
 #Made in replit
 #HINT: You can call clear() to clear the output in the console.
-from art import logo
+from Excerssises.art import logo
 print(logo)
 
 bids = {}
