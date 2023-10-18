@@ -12,5 +12,6 @@ Projects:
   - Etch-a-sketch
     - oop project of a self erasing and drawing app
   
-  -Eth
+  -Ethicalhackwiz
+    - small programs relating to networking
 
