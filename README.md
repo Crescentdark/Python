@@ -22,3 +22,5 @@ Projects:
     - a small game where the player has to guess which one is higher
   - A JUptyer excersiser
     - Linear regression with jupyter
+  - Pong
+    - classic pong game
