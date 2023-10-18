@@ -15,3 +15,5 @@ Projects:
   -Ethicalhackwiz
     - small programs relating to networking
 
+  - Excerssises
+
