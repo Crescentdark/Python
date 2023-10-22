@@ -14,7 +14,8 @@ def check_availability(url):
 
 def main():
     url = "https://www.smarty.cz/nintendo-c3851"
-    avaliable = check_availability(url)
+    
+    avaliable = check_availability(url, phrase)
 
 
 
