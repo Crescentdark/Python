@@ -39,6 +39,9 @@ def get_mail(df):
     subject_and_message = f"Subject:{subject}\n\n{body}"
     return subject_and_message
 
+def send_mail(df):
+
+
 
 
 
