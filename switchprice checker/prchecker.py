@@ -19,7 +19,7 @@ def get_response(url):
 
 def get_price(html):
     soup = BeautifulSoup(html, "lxml")
-    el = soup.select_one(".price_color")
+    el = soup.select_one("p.price:nth-child(1)")
     price = Price.fromstring(el.text)
     return price.amount_float
 
@@ -49,3 +49,4 @@ def main():
     if SAVE_TO_CSV:
         df_updated.to_csv(PRICES_CSV,index=False, mode="a")
 
+main()
