@@ -12,4 +12,4 @@ SEND_MAIL = True
 
 def get_url(csv_file):
     df = pd.read_csv(csv_file)
-    return dif
+    return df
