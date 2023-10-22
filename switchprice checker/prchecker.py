@@ -19,7 +19,8 @@ def process_products(df):
     for product in df.to_dict("records"):
         html = get_response(product["url"])
         product["price"] = get_price(html)
-        
+        product["alert"] = product["price"] < product["alert_price"]
+
         
 
 def get_response(url):
