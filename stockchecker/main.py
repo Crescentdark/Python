@@ -29,6 +29,9 @@ def main():
     avaliable = check_availability(url, phrase)
 
 
+    if avaliable:
+        
+
 
 
 
