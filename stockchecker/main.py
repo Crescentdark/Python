@@ -5,15 +5,15 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from email.message import EmailMessage
 
-def check_availability():
-    
+def check_availability(url):
+
 
 
 
 
 
 def main():
-    avaliable = check_availability()
+    avaliable = check_availability(url)
 
 
 
