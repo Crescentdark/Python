@@ -10,7 +10,8 @@ def check_availability(url, phrase):
     soup = BeautifulSoup(page,features="html.parser")
 
     if phrase in soup.txt:
-        return False
+        return True
+    return False
 
 
 
