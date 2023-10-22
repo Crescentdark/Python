@@ -8,3 +8,8 @@ PRODUCT_URL_CSV = "products.csv"
 SAVE_TO_CSV = True
 PRICES_CSV = "prices.csv"
 SEND_MAIL = True
+
+
+def get_url(csv_file):
+    df = pd.read_csv(csv_file)
+    return dif
