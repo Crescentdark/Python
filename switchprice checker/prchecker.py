@@ -6,3 +6,4 @@ from price_parser import Price
 
 PRODUCT_URL_CSV = "products.csv"
 SAVE_TO_CSV = True
+PRICES_CSV = "prices.csv"
