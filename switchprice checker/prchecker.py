@@ -14,6 +14,7 @@ def get_url(csv_file):
     df = pd.read_csv(csv_file)
     return df
 
+
 def process_products(df):
     updated_products = []
     for product in df.to_dict("records"):
@@ -23,9 +24,6 @@ def process_products(df):
         updated_products.append(product)
     return pd.DataFrame(updated_products)
          
-def get_response(url):
-    response = requests.get(url)
-    return response.text
 
 def get_price(html):
     soup = BeautifulSoup(html, "lxml")
