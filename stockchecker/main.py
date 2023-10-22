@@ -8,7 +8,9 @@ from email.message import EmailMessage
 def check_availability(url, phrase):
     page = urllib.request.urlopen(url)
     soup = BeautifulSoup(page,features="html.parser")
-    
+
+    if phrase in soup.txt:
+        return False
 
 
 
