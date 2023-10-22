@@ -26,4 +26,5 @@ def get_price(html):
     soup = BeautifulSoup(html, "lxml")
     el = soup.select_one(".price_color")
     price = Price.fromstring(el.text)
+    return price.amount_float
     
