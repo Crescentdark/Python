@@ -50,6 +50,8 @@ def get_price(html):
 
 
 
-
-if SAVE_TO_CSV:
-    df_updated.to_csv(PRICES_CSV, mode="a")
+def main():
+    df = get_url(PRODUCT_URL_CSV)
+    df_updated = process_products(df)
+    if SAVE_TO_CSV:
+        df_updated.to_csv(PRICES_CSV,index=False, mode="a")
