@@ -37,7 +37,8 @@ def get_mail(df):
     subject = "Price Drop Alert"
     body = df[df["alert"]].to_string()
     subject_and_message = f"Subject:{subject}\n\n{body}"
-    
+    return subject_and_message
+
 
 
 
