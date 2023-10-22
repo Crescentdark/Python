@@ -21,3 +21,6 @@ def get_url(csv_file):
 def get_response(url):
     response = requests.get(url)
     return response.text
+
+def get_price(html):
+    soup = BeautifulSoup(html, "lxml")
