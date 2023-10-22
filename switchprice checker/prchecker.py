@@ -5,3 +5,4 @@ from bs4 import BeautifulSoup
 from price_parser import Price
 
 PRODUCT_URL_CSV = "products.csv"
+SAVE_TO_CSV = True
