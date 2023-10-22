@@ -34,21 +34,14 @@ def get_price(html):
     return price.amount_float
 #email notifs
 #def get_mail(df):
-    subject = "Price Drop Alert"
-    body = df[df["alert"]].to_string()
-    subject_and_message = f"Subject:{subject}\n\n{body}"
-    return subject_and_message
+    #subject = "Price Drop Alert"
+    #body = df[df["alert"]].to_string()
+    #subject_and_message = f"Subject:{subject}\n\n{body}"
+    #return subject_and_message
 
 #def send_mail(df):
-    message_text = get_mail(df)
-    with smtplib.SMTP("smtp.server.address",)
-
-
-
-
-
-
-
+    #message_text = get_mail(df)
+    #with smtplib.SMTP("smtp.server.address")
 
 def main():
     df = get_url(PRODUCT_URL_CSV)
