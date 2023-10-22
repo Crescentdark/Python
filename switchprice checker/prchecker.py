@@ -13,3 +13,7 @@ SEND_MAIL = True
 def get_url(csv_file):
     df = pd.read_csv(csv_file)
     return df
+
+def process_products(df):
+    for product in df.to_dict("records"):
+        # product["URL"] is the URL
