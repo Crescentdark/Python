@@ -48,3 +48,6 @@ def main():
     df_updated = process_products(df)
     if SAVE_TO_CSV:
         df_updated.to_csv(PRICES_CSV,index=False, mode="a")
+
+
+main()
