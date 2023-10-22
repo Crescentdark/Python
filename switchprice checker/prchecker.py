@@ -40,6 +40,7 @@ def get_mail(df):
     return subject_and_message
 
 def send_mail(df):
+    message_text = get_mail(df)
 
 
 
