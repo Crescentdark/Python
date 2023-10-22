@@ -24,3 +24,4 @@ def get_response(url):
 
 def get_price(html):
     soup = BeautifulSoup(html, "lxml")
+    el = soup.select_one(".price_color")
