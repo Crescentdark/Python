@@ -17,6 +17,12 @@ def get_response(url):
     response = requests.get(url)
     return response.text
 
+def get_price(html):
+    soup = BeautifulSoup(html, "lxml")
+    el = soup.select_one(".price_color")
+    price = Price.fromstring(el.text)
+    return price.amount_float
+
 def process_products(df):
     updated_products = []
     for product in df.to_dict("records"):
@@ -26,13 +32,6 @@ def process_products(df):
         updated_products.append(product)
     return pd.DataFrame(updated_products)
          
-
-
-def get_price(html):
-    soup = BeautifulSoup(html, "lxml")
-    el = soup.select_one(".price_color")
-    price = Price.fromstring(el.text)
-    return price.amount_float
 #email notifs
 #def get_mail(df):
     #subject = "Price Drop Alert"
