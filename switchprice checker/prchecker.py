@@ -17,6 +17,7 @@ def get_url(csv_file):
 def process_products(df):
     updated_products = []
     for product in df.to_dict("records"):
+        html = get_response(product["url"])
         
 
 def get_response(url):
