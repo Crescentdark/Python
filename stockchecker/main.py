@@ -6,13 +6,16 @@ from bs4 import BeautifulSoup
 from email.message import EmailMessage
 
 def check_availability(url, phrase):
-    page = urllib.request.urlopen(url)
-    soup = BeautifulSoup(page,features="html.parser")
+    
+    try:
+        page = urllib.request.urlopen(url)
+        soup = BeautifulSoup(page,features="html.parser")
 
-    if phrase in soup.txt:
-        return True
-    return False
-
+        if phrase in soup.txt:
+            return True
+        return False
+    except:
+        log += "Error parsing website"
 
 
 
