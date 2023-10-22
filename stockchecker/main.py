@@ -5,7 +5,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from email.message import EmailMessage
 
-def check_availability(url):
+def check_availability(url, phrase):
 
 
 
@@ -14,7 +14,7 @@ def check_availability(url):
 
 def main():
     url = "https://www.smarty.cz/nintendo-c3851"
-    
+    phrase = "OLED"
     avaliable = check_availability(url, phrase)
 
 
