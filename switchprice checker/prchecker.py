@@ -32,4 +32,13 @@ def get_price(html):
     el = soup.select_one(".price_color")
     price = Price.fromstring(el.text)
     return price.amount_float
-    
+#email notifs
+
+
+
+
+
+
+
+if SAVE_TO_CSV:
+    df_updated.to_csv(PRICES_CSV, mode="a")
