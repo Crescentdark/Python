@@ -4,9 +4,9 @@ import requests
 from bs4 import BeautifulSoup
 from price_parser import Price
 
-PRODUCT_URL_CSV = "products.csv"
+PRODUCT_URL_CSV = "switchprice checker/products.csv"
 SAVE_TO_CSV = True
-PRICES_CSV = "prices.csv"
+PRICES_CSV = "switchprice checker/prices.csv"
 SEND_MAIL = True
 
 
@@ -48,3 +48,4 @@ def main():
     df_updated = process_products(df)
     if SAVE_TO_CSV:
         df_updated.to_csv(PRICES_CSV,index=False, mode="a")
+
