@@ -13,7 +13,9 @@ SEND_MAIL = True
 def get_url(csv_file):
     df = pd.read_csv(csv_file)
     return df
-
+def get_response(url):
+    response = requests.get(url)
+    return response.text
 
 def process_products(df):
     updated_products = []
@@ -24,6 +26,7 @@ def process_products(df):
         updated_products.append(product)
     return pd.DataFrame(updated_products)
          
+
 
 def get_price(html):
     soup = BeautifulSoup(html, "lxml")
