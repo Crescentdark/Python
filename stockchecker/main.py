@@ -7,7 +7,8 @@ from email.message import EmailMessage
 
 def check_availability(url, phrase):
     page = urllib.request.urlopen(url)
-    soup
+    soup = BeautifulSoup(page,features="html.parser")
+    
 
 
 
