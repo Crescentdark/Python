@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from price_parser import Price
+from plyer import notification
 
 PRODUCT_URL_CSV = "switchprice checker/products.csv"
 SAVE_TO_CSV = True
