@@ -33,6 +33,9 @@ def get_price(html):
     price = Price.fromstring(el.text)
     return price.amount_float
 #email notifs
+def get_mail(df):
+    subject = "Price Drop Alert"
+    body = df[df["alert"]].to_string()
 
 
 
