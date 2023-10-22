@@ -51,9 +51,4 @@ def main():
         df_updated.to_csv(PRICES_CSV,index=False, mode="a")
 
 main()
-notification.notify(
-    title = 'testing',
-    message = 'message',
-    app_icon = None,
-    timeout = 10,
-)
+notification.notify(title="Price alert",message="Check csv")
