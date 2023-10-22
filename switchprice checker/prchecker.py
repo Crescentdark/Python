@@ -19,4 +19,5 @@ def process_products(df):
         # product["URL"] is the URL
 
 def get_response(url):
-    
+    response = requests.get(url)
+    return response.text
