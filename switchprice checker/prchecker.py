@@ -22,10 +22,7 @@ def process_products(df):
         product["alert"] = product["price"] < product["alert_price"]
         updated_products.append(product)
     return pd.DataFrame(updated_products)
-    
-
-        
-
+         
 def get_response(url):
     response = requests.get(url)
     return response.text
