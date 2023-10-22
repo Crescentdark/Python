@@ -21,6 +21,7 @@ def process_products(df):
         product["price"] = get_price(html)
         product["alert"] = product["price"] < product["alert_price"]
         updated_products.append(product)
+    return pd.DataFrame(updated_products)
     
 
         
