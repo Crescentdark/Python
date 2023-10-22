@@ -5,8 +5,10 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from email.message import EmailMessage
 
+log = ""
+
 def check_availability(url, phrase):
-    
+    global log
     try:
         page = urllib.request.urlopen(url)
         soup = BeautifulSoup(page,features="html.parser")
