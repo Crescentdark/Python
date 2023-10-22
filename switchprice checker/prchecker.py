@@ -20,6 +20,8 @@ def process_products(df):
         html = get_response(product["url"])
         product["price"] = get_price(html)
         product["alert"] = product["price"] < product["alert_price"]
+        updated_products.append(product)
+    
 
         
 
