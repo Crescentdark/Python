@@ -6,3 +6,6 @@ from bs4 import BeautifulSoup
 from email.message import EmailMessage
 
 def main():
+
+    if __name__ == '__name__':
+        
