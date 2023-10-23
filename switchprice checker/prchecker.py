@@ -8,7 +8,7 @@ from plyer import notification
 PRODUCT_URL_CSV = "switchprice checker/products.csv"
 SAVE_TO_CSV = True
 PRICES_CSV = "switchprice checker/prices.csv"
-SEND_MAIL = True
+SEND_NOTIF = True
 
 
 def get_url(csv_file):
