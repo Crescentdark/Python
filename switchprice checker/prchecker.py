@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from price_parser import Price
 from plyer import notification
 from apscheduler.schedulers.blocking import BlockingScheduler
+import os
 
 PRODUCT_URL_CSV = "switchprice checker/products.csv"
 SAVE_TO_CSV = True
@@ -53,9 +54,9 @@ def main():
     if SEND_NOTIF:
         for index, row in df_updated.iterrows():
             if row['alert'] == True:
-                notification.notify(title="Price alert",message="PRICE DROP")
+                notification.notify(title="Price alert Smarty switch",message="PRICE DROP")
             else:
-                notification.notify(title="Price alert",message="NO PRICE DROP")
+                notification.notify(title="Price alert Smarty switch",message="NO PRICE DROP")
 
 
 scheduler = BlockingScheduler()
