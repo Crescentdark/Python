@@ -51,11 +51,13 @@ def main():
     if SAVE_TO_CSV:
         df_updated.to_csv(PRICES_CSV,index=False, mode="a")
     if SEND_NOTIF:
-        notification.notify(title="Price alert",message=str(df_updated))
+        for index, row in df_updated.iterrows():
+            if row['alert'] == True:
+                notification.notify(title="Price alert",message="PRICE DROP")
+            else:
+                notification.notify(title="Price alert",message="NO PRICE DROP")
 
 
 scheduler = BlockingScheduler()
-scheduler.add_job(main, 'interval', hours=4)
+scheduler.add_job(main, 'interval', hours=1)
 scheduler.start()
-
-#notification.notify(title="Price alert",message="Check csv")
