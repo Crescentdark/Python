@@ -49,6 +49,9 @@ def main():
     df_updated = process_products(df)
     if SAVE_TO_CSV:
         df_updated.to_csv(PRICES_CSV,index=False, mode="a")
+    if SEND_NOTIF:
+        notification.notify(title="Price alert",message=str(df_updated))
+
 
 main()
-notification.notify(title="Price alert",message="Check csv")
+#notification.notify(title="Price alert",message="Check csv")
