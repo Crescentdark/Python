@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from price_parser import Price
 from plyer import notification
+from apscheduler.schedulers.blocking import BlockingScheduler
 
 PRODUCT_URL_CSV = "switchprice checker/products.csv"
 SAVE_TO_CSV = True
@@ -53,5 +54,8 @@ def main():
         notification.notify(title="Price alert",message=str(df_updated))
 
 
-main()
+scheduler = BlockingScheduler()
+scheduler.add_job(main, 'interval', hours=4)
+scheduler.start()
+
 #notification.notify(title="Price alert",message="Check csv")
